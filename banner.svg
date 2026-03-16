@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <radialGradient id="bgBanner" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <radialGradient id="glowBanner" cx="30%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glowText">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bgBanner)"/>
+  <rect width="1500" height="500" fill="url(#glowBanner)"/>
+
+  <!-- Circuit lines background decoration -->
+  <g stroke="#f59e0b" stroke-width="1" stroke-opacity="0.12" fill="none">
+    <polyline points="0,120 200,120 200,80 400,80"/>
+    <polyline points="0,380 200,380 200,420 400,420"/>
+    <polyline points="1100,80 1300,80 1300,120 1500,120"/>
+    <polyline points="1100,420 1300,420 1300,380 1500,380"/>
+    <polyline points="600,20 600,60 640,60"/>
+    <polyline points="860,480 860,440 820,440"/>
+    <!-- Dots -->
+    <circle cx="200" cy="120" r="3" fill="#f59e0b" fill-opacity="0.3"/>
+    <circle cx="200" cy="380" r="3" fill="#f59e0b" fill-opacity="0.3"/>
+    <circle cx="1300" cy="120" r="3" fill="#f59e0b" fill-opacity="0.3"/>
+    <circle cx="1300" cy="380" r="3" fill="#f59e0b" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Vertical accent line -->
+  <line x1="680" y1="100" x2="680" y2="400" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- LEFT SIDE — Logo mark -->
+  <!-- Background circle for logo -->
+  <circle cx="280" cy="250" r="160" fill="#13131a" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="280" cy="250" r="155" fill="none" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="6 5"/>
+
+  <text
+    x="280" y="295"
+    text-anchor="middle"
+    font-family="'Arial Black', 'Arial', sans-serif"
+    font-weight="900"
+    font-size="120"
+    letter-spacing="-2"
+    fill="#f59e0b"
+    filter="url(#glowText)"
+  >AI</text>
+
+  <line x1="168" y1="318" x2="392" y2="318" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="168" cy="318" r="3" fill="#f59e0b" fill-opacity="0.6"/>
+  <circle cx="392" cy="318" r="3" fill="#f59e0b" fill-opacity="0.6"/>
+
+  <text
+    x="280" y="352"
+    text-anchor="middle"
+    font-family="'Arial', sans-serif"
+    font-weight="700"
+    font-size="28"
+    letter-spacing="10"
+    fill="#f59e0b"
+    fill-opacity="0.9"
+  >DAD</text>
+
+  <!-- RIGHT SIDE — Brand text -->
+  <text
+    x="760" y="210"
+    font-family="'Arial Black', 'Arial', sans-serif"
+    font-weight="900"
+    font-size="96"
+    letter-spacing="-2"
+    fill="#f1f5f9"
+  >AI Dad</text>
+
+  <!-- Tagline -->
+  <text
+    x="760" y="270"
+    font-family="'Arial', sans-serif"
+    font-weight="400"
+    font-size="28"
+    fill="#94a3b8"
+    letter-spacing="0.5"
+  >Learning AI in Public</text>
+
+  <!-- Accent line under tagline -->
+  <line x1="760" y1="292" x2="1060" y2="292" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Core message -->
+  <text
+    x="760" y="350"
+    font-family="'Arial', sans-serif"
+    font-weight="600"
+    font-size="22"
+    fill="#f59e0b"
+    fill-opacity="0.85"
+  >"Tell me your problem. We'll try fix it with AI."</text>
+
+  <!-- Social handles -->
+  <text
+    x="760" y="420"
+    font-family="'Arial', sans-serif"
+    font-weight="400"
+    font-size="18"
+    fill="#475569"
+  >@theai.dad  ·  instagram  ·  tiktok  ·  x  ·  youtube</text>
+
+</svg>
